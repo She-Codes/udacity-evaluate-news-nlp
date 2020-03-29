@@ -21,6 +21,7 @@ const handleSubmit = async e => {
   const url = form.url.value;
   let articleAnalysis;
 
+  // clear rendered output and any error message
   resetApp({
     textWrapper,
     sentimentWrapper,
@@ -28,6 +29,7 @@ const handleSubmit = async e => {
     form
   });
 
+  // if the user entered a URL, get the results from the Aylien API and render them
   if (url) {
     articleAnalysis = await getArticleAnalysis(url);
     renderResults(articleAnalysis.data, {

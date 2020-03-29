@@ -19,15 +19,25 @@
         <main>
             <section>
                 <form>
-                    <p>Grab the url of a news and paste it here:</p>
+                    <p>Grab the url of a news article and paste it here:</p>
                     <input type="text" name="url">
                     <input type="submit" name="" value="submit">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+                <p>Submitted Text:</p>
+                <div id="text"></div>
+                <div id="results">
+                    <div id="sentiment">
+                        <p>Sentiment:</p>
+                        <p id="sentiment-wrapper" class="wrapper"></p>
+                    </div>
+                    <div id="confidence">
+                        <p>Confidence:</p>
+                        <p id="confidence-wrapper" class="wrapper"></p>
+                    </div>
+                </div>
             </section>
         </main>
 

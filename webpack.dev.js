@@ -21,6 +21,9 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/client/views/index.html',

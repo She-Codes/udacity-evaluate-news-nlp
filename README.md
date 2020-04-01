@@ -30,6 +30,7 @@ API_KEY=***********
 - `yarn build-prod` to bundle for production and generate the `dist` folder
 - or
 - `yarn build-dev` to run your webpack dev server
+- With the Express server running, run `yarn test` to run tests
 
 This project uses [nodemon](https://nodemon.io/) to run the Node server. If you do not have nodemon installed simply swap out `nodemon` for `node` in your `package.json` start script.
 
